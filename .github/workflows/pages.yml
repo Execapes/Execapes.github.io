@@ -27,7 +27,7 @@ jobs:
         with:
           path: ./public
 
-deploy:
+  deploy:
     needs: build
     permissions:
       pages: write
