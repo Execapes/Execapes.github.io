@@ -10,18 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Use Node.js 26
-      uses: actions/setup-node@v4
-      with:
-      node-version: "26"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "26"
+
       - name: Install Independencies
-      run: npm install
+        run: npm install
+
       - name: Build site
-      run: npm run build
+        run: npm run build
+
       - name: Upload site
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ./public
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
 
 deploy:
     needs: build
