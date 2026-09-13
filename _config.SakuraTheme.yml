@@ -4,3 +4,21 @@ siteName: Execapes
 url: https://execapes.github.io
 description: Welcome to Execapes' personal blog.
 avatar: https://github.com/execapes.png
+
+# Use bundled cover images instead of the demo site's external CDN.
+bg:
+  - /images/cover/(1).jpg.webp
+  - /images/cover/(2).jpg.webp
+  - /images/cover/(3).jpg.webp
+  - /images/cover/(4).jpg.webp
+  - /images/cover/(5).jpg.webp
+  - /images/cover/(6).jpg.webp
+  - /images/cover/(7).jpg.webp
+  - /images/cover/(8).jpg.webp
+
+# Enable these only after configuring your own service or playlist.
+valine: false
+v_appId: ''
+v_appKey: ''
+aplayer:
+  enable: false

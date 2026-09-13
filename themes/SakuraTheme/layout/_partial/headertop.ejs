@@ -5,7 +5,7 @@
     <div class="focusinfo no-select">
       <div class="header-tou">
         <a href="<%- theme.url%>">
-          <img src="<%- (theme.cdn || '') + theme.avatar %>">
+          <img src="<%- /^https?:\/\//.test(theme.avatar) ? theme.avatar : (theme.cdn || '') + theme.avatar %>">
         </a>
       </div>
       <div class="header-info">

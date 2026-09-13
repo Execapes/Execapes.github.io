@@ -1098,6 +1098,7 @@ var home = location.href,
       }
     },
     VA: function () {
+      if (typeof Valine === 'undefined' || !document.getElementById('vcomments')) return
       if (!valine) {
         var valine = new Valine()
         valine.init({
