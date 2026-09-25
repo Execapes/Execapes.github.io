@@ -13,10 +13,10 @@ author_pic: img/author.jpg
 
 # background image/color 背景图片/颜色
 background:
-  type: 3 # 1: image 图片 | 2: color 颜色 | 3: gradient style 渐变
-  color: # (css color name css颜色名称) 'MistyRose' | (color code 颜色代码) '#FFE4E1'
-  image_url: images/Spiritfarer-1.png # image path 图片路径
-  gradient: linear-gradient(to bottom right,#ffa751,#ffe259) # gradient css statement 渐变css语句
+  type: 1 # 1: image 图片 | 2: color 颜色 | 3: gradient style 渐变
+  color: '#FFE4E1' # (css color name css颜色名称) 'MistyRose' | (color code 颜色代码) '#FFE4E1'
+  image_url: 'images/GK-ivQUboAAAwky.jpg' # image path 图片路径
+  gradient: 'linear-gradient(to bottom right,#ffa751,#ffe259)' # gradient css statement 渐变css语句
   attachment: fixed # background scrollable 背景是否可以随页面滚动: scroll | fixed
 
 # menu config 导航栏菜单项
@@ -116,9 +116,9 @@ links:
       desc: My Friend's Blog, for example.
       url: /
 
-# reward module 赞赏栏目
+#reward module 赞赏栏目
 reward:
-  enable: true
+  enable: false
   QR_code: # list your payment QR Code so that users can pay you a coffee 列出你的收款二维码，让用户可以扫描打赏
     Wechat: /img/reward/wechat.jpg # payment name: QRCode's image url 支付方式名称: 二维码图片路径
     Alipay: /img/reward/alipay.jpg
