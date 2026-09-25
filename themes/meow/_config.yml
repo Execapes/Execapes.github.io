@@ -15,7 +15,7 @@ author_pic: img/author.jpg
 background:
   type: 1 # 1: image 图片 | 2: color 颜色 | 3: gradient style 渐变
   color: '#FFE4E1' # (css color name css颜色名称) 'MistyRose' | (color code 颜色代码) '#FFE4E1'
-  image_url: './images/GK-ivQUboAAAwky.jpg' # image path 图片路径
+  image_url: './img/GK-ivQUboAAAwky.jpg' # image path 图片路径
   gradient: 'linear-gradient(to bottom right,#ffa751,#ffe259)' # gradient css statement 渐变css语句
   attachment: fixed # background scrollable 背景是否可以随页面滚动: scroll | fixed
 
