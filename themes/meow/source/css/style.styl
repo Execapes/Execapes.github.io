@@ -13,29 +13,3 @@ importUrl(hexo-config('font.url_list'))
 :root
   --bg-blur: 0px
 
-/* 1. 移除 body 本身的背景图，改由独立的伪元素渲染 */
-body
-  background-image: none !important
-
-/* 2. 用伪元素作为全局独立背景层，处于最底层 (z-index: -1) */
-body::before
-  content: ""
-  position: fixed
-  top: 0
-  left: 0
-  width: 100vw
-  height: 100vh
-  background-image: url("/images/GK-ivQUBoAAAwky.jpg")  /* 指向你的真实背景图路径 */
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-  z-index: -1
-  filter: blur(var(--bg-blur))
-  -webkit-filter: blur(var(--bg-blur))
-  transition: filter 0.1s linear, -webkit-filter 0.1s linear
-  pointer-events: none
-
-/* 3. 前景容器全部提升至 z-index: 1 */
-header, #top-menu-hidden, .blog-info, .main, .main-content, footer
-  position: relative
-  z-index: 1
