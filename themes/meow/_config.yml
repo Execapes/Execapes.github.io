@@ -15,7 +15,8 @@ author_pic: img/author.jpg
 background:
   type: 1 # 1: image 图片 | 2: color 颜色 | 3: gradient style 渐变
   color: '#FFE4E1' # (css color name css颜色名称) 'MistyRose' | (color code 颜色代码) '#FFE4E1'
-  image_url: 'https://raw.githubusercontent.com/Execapes/Execapes.github.io/main/source/images/bp.jpg'
+  image_url: /images/bp.jpg
+  gradient: 'linear-gradient(to bottom right,#ffa751,#ffe259)'
   attachment: fixed # background scrollable 背景是否可以随页面滚动: scroll | fixed
 
 # menu config 导航栏菜单项
