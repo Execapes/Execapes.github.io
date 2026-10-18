@@ -19,17 +19,20 @@ python的学习其实在上上周就有涉及了，对于py的了解，从开始
 对于名称赋值，这也是我觉得为何py比c和c++更加方便和简易的原因，py的赋值非常的简单
 在 Python 中，创建变量或常量时不使用任何关键字（比如c的int <>）。程序员可以用赋值运算符 = 把名称（也叫_变量_）绑定到任意类型的对象上：<name> = <value>。一个名称在其生命周期内可以被重新赋值（或重新绑定）为不同的值（不同的对象类型）。
 比如：
-```int c = 100;
+```c
+int c = 100;
 float b = 10.23;
 ```
 在python中只需要
-```c = 100
+```py
+c = 100
 b = 10.23
 ```
 ~~是的，他甚至连分号都不用打，天天搞混记错~~
 
 简单的地方还有函数的定义：在 Python 中，函数的定义只需要def <函数名> (传入数据)，如：
-```def add_two_numbers(number_one, number_two):
+```py
+def add_two_numbers(number_one, number_two):
   total = number_one + number_two
   print(total)  
 ```
@@ -39,13 +42,14 @@ b = 10.23
 
 关于文档字符串，编程系统天天叫我加上头注释，我一般都不理他。。。好像蛮有用，以下是描述
 函数体的第一条语句可以（但不是必须）是一个文档字符串，它简洁地概述函数或对象的用途。文档字符串用三引号（"""）声明，并与代码块保持在相同的缩进层级：
-```"""Form a complex number.
+```py
+"""Form a complex number.
 
     Keyword Arguments:
         real (float): The real part of the number (default 0.0)
         imag (float): The imaginary part of the number (default 0.0)
         
-    """
+"""
 ```
 这种类型的，放在文件的最开头（没错最开头不需要声明标准库），和函数的第一行。写明你到底要几把干啥
 ###值类型
@@ -64,7 +68,8 @@ and是左右有一个不对就都不对，or是两边有一个对就可以，not
 在 Python 中，if、elif（由 “else and if” 缩写而来）和else语句用于控制程序的执行流程，让程序能够做出判断。 与许多其他编程语言不同，Python 3.9 及更早的版本没有提供正式的 switch 语句，而是用多个elif语句来实现类似的功能。最主要的是格式要求很简单，不用搞那么多框（说的就是你c）。写着很舒适啊。
 for好像完全变成遍历专用了，while倒是基本上一样 。
 对于py的for来说不再是循环，而是遍历一个容器。如：
-```for i in range(10):
+```py
+for i in range(10):
     print(i)
 
 for s in ["a", "b", "c"]:
@@ -74,13 +79,15 @@ for c in "pwn": #真的只用打冒号
     print(c)
 ```
 C中的for循环可以说是一个while代码的限定小范围缩写，如：
-```char s[] = "pwn";
+```c
+char s[] = "pwn";
 for (int i = 0; i < 3; i++) {
     printf("%c\n", s[i]);
 }
 ```
 和：
-```char s[] = "pwn";
+```c
+char s[] = "pwn";
 int i = 0;
 while (i < 3) {
     printf("%c\n", s[i]);
@@ -106,11 +113,15 @@ file	看题目文件类型（32/64 位、动态/静态链接）
 （来源于codex glm5.3）
 
 接着下载pwntools + ROPgadget,运行
-```pip3 install pwntools ROPgadget```
+```cmd
+pip3 install pwntools ROPgadget
+```
 
 然后下载了pwndbg，一个插件，运行
-```git clone https://github.com/pwndbg/pwndbg ~/pwndbg
-cd ~/pwndbg && ./setup.sh```
+```cmd
+git clone https://github.com/pwndbg/pwndbg ~/pwndbg
+cd ~/pwndbg && ./setup.sh
+```
 好像是一个工具，~~给gdb上颜色看看~~
 
 其他的都没怎么搞了，有空的时候打打ctf看看能不能用上这个东西吧（雾）
